@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300;1,400;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <!--Header-->
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li class="li">
+                            <a href="index.html">HOME</a>
+                            <a href="about.html">ABOUT</a>
+                            <a href="https://youtube.com/@GamingTechPlays">YOUTUBE</a>
+                            <a href="contact.html">CONTACT</a>
+                            <a href="shop.html">SHOP</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="text-box">
+            <h1>Hi I'm Gaming Tech</h1>
+            <p>I'm A Web, Software And Game Developer Who Loves Working On Development Projects. <br>
+               I Can Work With Python (Pygame, Tkinter, Pandas), Dart (Flutter, Firebase), JavaScript (Still Learning), <br>
+               C# (Unity), SQL And OfCouse HTML And CSS.
+            </p>
+            <a href="" class="button">Contact Me</a>
+        </div>
+        </section>
+        
+
+        <!--JavaScript For Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0"; 
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        
+    </body>
+</html>

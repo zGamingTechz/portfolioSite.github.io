@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300;1,400;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--Header-->
+        <section class="sub-header contact-header">
+            <nav>
+                <a href="index.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li class="li">
+                            <a href="index.html">HOME</a>
+                            <a href="about.html">ABOUT</a>
+                            <a href="https://youtube.com/@GamingTechPlays">YOUTUBE</a>
+                            <a href="">CONTACT</a>
+                            <a href="shop.html">SHOP</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1 style="font-size: 35px;">Contact Me</h1>
+            <p style="font-size: 20px;">Below Are My Socials<br>Where You Can Contact Me</p>
+        </section>
+
+        <!--Contact Info-->
+        <section class="contact-me">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <h5>"Subscribe To My Youtube"></i></h5>
+                        <span>
+                            <a href="https://www.youtube.com/@GamingTechPlays"><h5>Subscribe Now</h5></a>
+                            <p>For Awsome Videos</p>
+                        </span>
+                    </div>
+                    <div>
+                        <h5>"Join My Discord Community"></i></h5>
+                        <span>
+                            <a href="https://discord.gg/6gzPpS5Yxq"><h5>Join Now</h5></a>
+                            <p>Full Of Fun</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>example@gmail.com</h5>
+                            <p>Email For Queries</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!--Footer-->
+        <section class="footer">
+            <h4>Thanks For Visiting!</h4>
+            <p>
+               For Business Enquiry- <br>
+               Email- rkumarbhavy@gmail.com <br>
+               Currently Working For <a href="https://tenreck.com/">Tenreck</a>.
+            </p>
+            <br>
+            <h5>-Find Me Here-</h5>
+            <div class="icons">
+                <a href="https://www.youtube.com/@gamingtechplays"><i class="fa fa-youtube"></i></a>
+                <a href=""><i class="fa fa-git"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+            </div>
+            <p>Created With <i class="fa fa-heart-o"></i> By  Gaming Tech</p>
+        </section>
+
+        <!--JavaScript For Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0"; 
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
